@@ -43,9 +43,15 @@
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[2]{
+\newcommand{\resumeDetail}[1]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \textbf{#1:}
   }
 }
 
@@ -65,6 +71,8 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeDetailStart}{\begin{itemize}}
+\newcommand{\resumeDetailEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -89,34 +97,53 @@
       {Data Scientist}{March 2018 - Present}
       \resumeItemListStart
         \resumeItem{Automotive Client Data Science Implementor}
-          {Developed and implemented numerous sucessful models adding £250,000 for automotive clients using full data science stack - including data engineering, exploration, modeling, and productionization.}
-         % \resumeDetailStart
-         %   \resumeDetail{bullet point}
-         %   \resumeDetail{bullet point}
-         % \resumeDetailEnd
-         % \resumeItem{Vehicle Affinity System}
+          % {Developed and implemented numerous sucessful models adding £250,000 for automotive clients using full data science stack - including data engineering, exploration, modeling, and productionization.}
+          \resumeDetailStart
+            \resumeDetail{bullet point}
+            \resumeDetail{bullet point}
+          \resumeDetailEnd
+        \resumeItem{Vehicle Affinity System}
          %  {Created hybrid model to identify customers most likely to purchase a particular model of car. Hybrid model used output of a DNN classfier to activate a Matrix Factorization model.}
-        % \resumeItem{Data Science Standards Lead}
+          \resumeDetailStart
+            \resumeDetail{bullet point}
+            \resumeDetail{bullet point}
+          \resumeDetailEnd
+        \resumeItem{Data Science Standards Lead}
          %  {Lead multi-channel team to research, disucss, and implement standards on the Data Science team. Standards include: custom packages for consistent data aquisition and cleaning, coding style standards, git workflow, and documentation guidelines}
+          \resumeDetailStart
+            \resumeDetail{bullet point}
+            \resumeDetail{bullet point}
+          \resumeDetailEnd
       \resumeItemListEnd
 
-    % \resumeSubheading
-    %   {Wellbe}{Madison, Wi}
-    %   {Data Insights Guru}{August 2015 - August 2017}
-    %   \resumeItemListStart
-    %     \resumeItem{Business Intelligence Development}
+    \resumeSubheading
+      {Wellbe}{Madison, Wi}
+      {Data Insights Guru}{August 2015 - August 2017}
+      \resumeItemListStart
+        \resumeItem{Business Intelligence Development}
     %       {Created and managed all analytics reports using Looker for on-demand visualizations.}
-    %     \resumeItem{Data Engineering}
-    %       {}
-    %   \resumeItemListEnd
+          \resumeDetailStart
+            \resumeDetail{bullet point}
+            \resumeDetail{bullet point}
+          \resumeDetailEnd
+        \resumeItem{Data Engineering}
+          \resumeDetailStart
+            \resumeDetail{bullet point}
+            \resumeDetail{bullet point}
+          \resumeDetailEnd
+      \resumeItemListEnd
 
-    % \resumeSubheading
-    %   {OptumRx}{Chicago, Il}
-    %   {Finance Leadership Development Program}{June 2013 - June 2015}
-    %   \resumeItemListStart
-    %     \resumeItem{Portfolio Management}
-    %       {Created models for portfolio hedging, portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-    %   \resumeItemListEnd
+    \resumeSubheading
+      {OptumRx}{Chicago, Il}
+      {Finance Leadership Development Program}{June 2013 - June 2015}
+      \resumeItemListStart
+        \resumeItem{Portfolio Management}
+          % {Created models for portfolio hedging, portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+          \resumeDetailStart
+            \resumeDetail{bullet point}
+            \resumeDetail{bullet point}
+          \resumeDetailEnd
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
